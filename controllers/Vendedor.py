@@ -2,7 +2,7 @@ from validations.decorators import get_atributes
 
 
 class Sellers:
-    _seller_db = {1: {'name': 'carlos', 'phone_number': 3207515166, 'address': 'colinas', 'age': 18}, 2: {'name': 'juan', 'phone_number': 3207515166, 'address': 'colinas', 'age': 23}}
+    _seller_db = {}
     def __init__(self, **kwargs):
         if len(kwargs) > 0:
             self.__id = self.get_id

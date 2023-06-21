@@ -2,7 +2,7 @@ from validations.decorators import get_atributes
 
 
 class Products:
-    _products_db = {1:{'name': 'tomates', 'cantidity': 5, 'unit_price': 300}, 2:{'name': 'lechuga', 'cantidity': 5, 'unit_price': 300}}
+    _products_db = {}
     def __init__(self, **kwargs):
         if len(kwargs) > 0:
             self.__id = self.get_id
