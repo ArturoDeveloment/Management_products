@@ -10,9 +10,3 @@ def get_atributes(func):
         data = dict(zip(keys, values))
         return func(self, data)
     return wrapper
-
-def validate_seller(func):
-    @wraps(func)
-    def wrapper(self, *args, **kwargs):
-        pass
-    return wrapper
