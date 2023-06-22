@@ -1,7 +1,7 @@
 from controllers.Ventas import Sales
 from datetime import datetime
 
-class Sales_menu:
+class SalesMenu:
     def set_option(self, option):
         match option:
             case 'i':

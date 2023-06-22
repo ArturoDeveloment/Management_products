@@ -1,6 +1,6 @@
 from controllers.Vendedor import Sellers
 
-class Seller_menu:
+class SellerMenu:
     def set_option(self, give_option):
         match give_option:
             case 'a':

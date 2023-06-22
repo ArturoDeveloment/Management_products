@@ -50,6 +50,20 @@ class Products:
                 print(f'Usted no tiene el dato "{i}"')
                 continue
             new_value = input(f"Digite el nuevo dato para {i}: ")
+            try:
+                if i == 'cantidity' and int(new_value) < 0:
+                    print('La cantidad no se permite menor a cero')
+                    return None
+                if i == 'cantidity':
+                    new_value = int(new_value)
+                if i == 'unit_price' and int(new_value) < 0:
+                    print('La precio no se permite menor a cero')
+                    return None
+                if i == 'unit_price':
+                    new_value = float(new_value)
+            except Exception as e:
+                print('Error de formato')
+                return None
             self._products_db[id][i] = new_value
             print('Cambio exitoso')
     

@@ -1,6 +1,6 @@
 from controllers.Productos import Products
 
-class Products_menu:
+class ProductsMenu:
     def set_option(self, give_option):
         match give_option:
             case 'e':

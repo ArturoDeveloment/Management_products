@@ -1,6 +1,6 @@
-from menus.tienda_vendedor import Seller_menu
-from menus.tienda_productos import Products_menu
-from menus.tienda_ventas import Sales_menu
+from menus.tienda_vendedor import SellerMenu
+from menus.tienda_productos import ProductsMenu
+from menus.tienda_ventas import SalesMenu
 
 class Menu:
     def __init__(self):
@@ -38,17 +38,17 @@ class Menu:
     
     @staticmethod
     def get_option_seller(give_option):
-        seller = Seller_menu()
+        seller = SellerMenu()
         seller.set_option(give_option)
     
     @staticmethod
     def get_option_product(give_option):
-        products = Products_menu()
+        products = ProductsMenu()
         products.set_option(give_option)
     
     @staticmethod
     def get_option_sales(give_option):
-        sales = Sales_menu()
+        sales = SalesMenu()
         sales.set_option(give_option)
 
 if __name__ == "__main__":
